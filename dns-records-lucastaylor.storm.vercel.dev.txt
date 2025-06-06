@@ -1,0 +1,3 @@
+; DNS Records for lucastaylor.storm.vercel.dev
+; Add these records to your DNS provider's configuration
+_vercel    IN    TXT    vc-domain-verify=lucastaylor.storm.vercel.dev,c983a91d0666c6f8624b
