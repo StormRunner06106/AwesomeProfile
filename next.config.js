@@ -4,7 +4,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = withBundleAnalyzer({
 	// your Next.js configuration
 	images: {
-		domains: ["i.scdn.co"],
+		domains: ["i.scdn.co", 'xlnjnzmlrizfhwevgvkw.supabase.co'],
 		// Add image optimization settings
 		formats: ['image/avif', 'image/webp'],
 		minimumCacheTTL: 60,
@@ -58,4 +58,8 @@ module.exports = withBundleAnalyzer({
 			exclude: ['error', 'warn'],
 		} : false,
 	},
+	env: {
+    // Explicitly expose required client-side env vars
+    SUPABASE_KEY: process.env.SUPABASE_KEY
+  },
 });
