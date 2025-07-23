@@ -1,12 +1,12 @@
 {
-  "name": "alvalen-portfolio-website",
+  "name": "stormrunner-portfolio-website",
   "author": {
-    "name": "Alvalen Shafelbilyunazra",
-    "email": "alvalen.shafel04@gmail.com",
+    "name": "Lucas Taylor",
+    "email": "stormrunner06106@gmail.com",
     "url": "https://lucas.my.id"
   },
   "license": "GPL-3.0",
-  "copyright": "Copyright (C) 2025 Alvalen Shafelbilyunazra",
+  "copyright": "Copyright (C) 2025 Lucas Taylor",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
+    "@atproto/api": "^0.15.27",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",

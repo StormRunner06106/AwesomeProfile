@@ -1,28 +1,41 @@
 import Image from "next/image";
 
 export default function PostCard({ post, index }) {
-	return (
-		<>
-            <div className="flex items-center p-4 max-w-md mx-auto bg-white rounded-xl overflow-hidden w-full">
-                {/* Image on the left */}
-                <div className="flex-shrink-0">
-                    <Image
-                        className="h-12 w-12 rounded-full"
-                        src={post.image_url} // or from public folder
-                        alt="Description of image"
-                        width={48}
-                        height={48}
-                    />
-                </div>
-                
-                {/* Text content on the right */}
-                <div className="ml-4">
-                    {/* Title row */}
-                    <h3 className="text-xl font-medium text-black">{post.title}</h3>
-                    {/* Subtitle row */}
-                    <p className="text-gray-500">{post.description}</p>
-                </div>
-            </div>
-        </>
-    )
+  console.log(index);
+
+  return (
+    <div className="flex flex-col w-64 h-80 bg-white rounded-xl shadow-md overflow-hidden m-2">
+      {/* Thumbnail image */}
+      <div className="relative w-full h-40 bg-gray-200">
+        <Image
+          src={
+            Object.keys(post.post).includes("embed")
+              ? Object.keys(post.post.embed).includes("images") &&
+                post.post.embed.images.length > 0
+                ? post.post.embed.images[0].fullsize
+                : "/image/post_banner.jpg"
+              : "/image/post_banner.jpg"
+          }
+          alt={"Post thumbnail" + index}
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="256px"
+        />
+      </div>
+      {/* Text content */}
+      <div className="flex flex-col flex-1 p-4">
+        <p
+          className="text-gray-600 text-sm overflow-hidden text-ellipsis"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: "vertical",
+          }}
+          title={post.post.record.text}
+        >
+          {post.post.record.text}
+        </p>
+      </div>
+    </div>
+  );
 }
