@@ -440,7 +440,7 @@ const MyPage = () => {
                   {/* icons */}
                   <div className="flex justify-center items-center space-x-4">
                     <motion.a
-                      href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Lucas,"
+                      href="mailto:stormrunner06106@gmail.com?subject=Hello&body=Hello Lucas,"
                       className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
                       initial={{ y: 40, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
@@ -466,20 +466,6 @@ const MyPage = () => {
                       <FontAwesomeIcon icon={faGithub} className="text-3xl" />
                     </motion.a>
                     <motion.a
-                      href="https://www.facebook.com/profile.php?id=61562477559022"
-                      target="_blank"
-                      rel="lucastaylor"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-                      initial={{ opacity: 0, y: 40 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        y: { delay: 0.2 },
-                        opacity: { delay: 0.3 },
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
-                    </motion.a>
-                    <motion.a
                       href="https://bsky.app/profile/stormrunner06106.bsky.social"
                       target="_blank"
                       rel="storm runner"
@@ -492,20 +478,6 @@ const MyPage = () => {
                       }}
                     >
                       <FontAwesomeIcon icon={faBluesky} className="text-3xl" />
-                    </motion.a>
-                    <motion.a
-                      href="https://wa.me/+18209982715"
-                      target="_blank"
-                      rel="storm runner"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-                      initial={{ opacity: 0, y: 40 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        y: { delay: 0.4 },
-                        opacity: { delay: 0.5 },
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faWhatsapp} className="text-3xl" />
                     </motion.a>
                     <motion.a
                       href="https://discord.com/users/lucast06106"
