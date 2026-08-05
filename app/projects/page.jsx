@@ -17,14 +17,15 @@ import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const category = {
-	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
-};
+const categories = [
+	{ key: "all", label: "All Projects" },
+	{ key: "1", label: "Web Development" },
+	{ key: "2", label: "AI & Machine Learning" },
+	{ key: "3", label: "Mobile Application" },
+];
 
 export default function Page() {
-	const [activeCategory, setActiveCategory] = useState(1);
+	const [activeCategory, setActiveCategory] = useState("all");
 	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
@@ -48,7 +49,6 @@ export default function Page() {
 								alt="Lucas"
 								layout="fill"
 								objectFit="cover"
-								placeholder="blur"
 							/>
 						</motion.div>
 					</div>
@@ -102,7 +102,6 @@ export default function Page() {
 										alt="Lucas"
 										layout="fill"
 										objectFit="cover"
-										placeholder="blur"
 										className="rat"
 									/>
 								</motion.div>
@@ -128,7 +127,6 @@ export default function Page() {
 										alt="Lucas"
 										layout="fill"
 										objectFit="cover"
-										placeholder="blur"
 									/>
 								</motion.div>
 							</div>
@@ -206,16 +204,16 @@ export default function Page() {
 						type: "spring",
 					}}
 					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 ">
-					{Object.keys(category).map((key, index) => (
+					{categories.map((category) => (
 						<button
-							key={index}
+							key={category.key}
 							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
-								activeCategory === key
+								activeCategory === category.key
 									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
 									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
 							}`}
-							onClick={() => setActiveCategory(key)}>
-							{category[key]}
+							onClick={() => setActiveCategory(category.key)}>
+							{category.label}
 						</button>
 					))}
 				</motion.div>

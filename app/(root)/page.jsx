@@ -4,7 +4,6 @@
 
 "use client";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Image from "next/legacy/image";
 // import "../globals.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -44,24 +43,25 @@ const MyPage = () => {
         render={({ state, fullpageApi }) => (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20">
+              <div className="mx-auto container grid grid-cols-1 md:grid-cols-5 gap-4 p-10 overflow-hidden md:px-10 lg:px-20">
                 <motion.div
-                  className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
+                  className="md:col-span-3 flex flex-col justify-center items-center md:items-start text-center md:text-start"
                   initial={{ x: -100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{
                     type: "spring",
                   }}
                 >
-                  <div className="block md:hidden col-span-1 mx-auto my-10">
-                    <div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
-                      <Image
-                        src={Me}
+                  <div className="block md:hidden mx-auto my-8">
+                    <div className="bg-slate-500 rounded-full h-64 w-64 grayscale hover:grayscale-0 transition-all ease duration-300">
+                      <img
+                        src={Me.src}
                         width={500}
                         height={500}
                         className="rounded-full w-full h-full object-cover "
                         alt="Lucas"
-                        placeholder="blur"
+                        loading="eager"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -127,7 +127,7 @@ const MyPage = () => {
                   </motion.div>
                 </motion.div>
                 <motion.div
-                  className="hidden md:flex col-span-1 mx-auto justify-center items-center "
+                  className="hidden md:col-span-2 md:flex mx-auto justify-center items-center"
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{
@@ -135,14 +135,15 @@ const MyPage = () => {
                     type: "spring",
                   }}
                 >
-                  <div className="rounded-full h-auto w-auto  lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
-                    <Image
-                      src={Me}
+                  <div className="aspect-square w-[34vw] min-w-72 max-w-[32rem] overflow-hidden rounded-full grayscale hover:grayscale-0 transition-all ease duration-300">
+                    <img
+                      src={Me.src}
                       width={400}
                       height={550}
-                      placeholder="blur"
                       alt="Lucas"
                       className="rounded-full w-full h-full object-cover"
+                      loading="eager"
+                      decoding="async"
                     />
                   </div>
                 </motion.div>
@@ -152,7 +153,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -170,12 +171,12 @@ const MyPage = () => {
                       damping: 20,
                     }}
                   >
-                    <Image
-                      src={MeAbout}
-                      layout="fill"
-                      className="object-cover"
+                    <img
+                      src={MeAbout.src}
+                      className="absolute inset-0 h-full w-full object-cover"
                       alt="Lucas"
-                      placeholder="blur"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </motion.div>
                 </div>
@@ -222,7 +223,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -240,12 +241,12 @@ const MyPage = () => {
                       damping: 20,
                     }}
                   >
-                    <Image
-                      src={ProjectAll}
-                      layout="fill"
-                      className="object-cover"
+                    <img
+                      src={ProjectAll.src}
+                      className="absolute inset-0 h-full w-full object-cover"
                       alt="Lucas Setup"
-                      placeholder="blur"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </motion.div>
                 </div>
@@ -296,7 +297,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -314,12 +315,12 @@ const MyPage = () => {
                       damping: 20,
                     }}
                   >
-                    <Image
-                      src={PostBanner}
-                      layout="fill"
-                      className="object-cover"
+                    <img
+                      src={PostBanner.src}
+                      className="absolute inset-0 h-full w-full object-cover"
                       alt="Lucas Setup"
-                      placeholder="blur"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </motion.div>
                 </div>
@@ -370,7 +371,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -388,12 +389,12 @@ const MyPage = () => {
                       damping: 20,
                     }}
                   >
-                    <Image
-                      src={Setup}
-                      layout="fill"
-                      className="object-cover"
+                    <img
+                      src={Setup.src}
+                      className="absolute inset-0 h-full w-full object-cover"
                       alt="Lucas Setup"
-                      placeholder="blur"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </motion.div>
                 </div>
@@ -494,9 +495,10 @@ const MyPage = () => {
                       <FontAwesomeIcon icon={faDiscord} className="text-3xl" />
                     </motion.a>
                     <motion.a
-                      href="https://t.me/@lucastdev16"
+                      href="https://t.me/lhuang0106"
                       target="_blank"
-                      rel="storm runner"
+                      rel="noopener noreferrer"
+                      aria-label="Contact me on Telegram at @lhuang0106"
                       className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}

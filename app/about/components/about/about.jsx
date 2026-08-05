@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Card from "./spotify/card";
 import { motion } from "framer-motion";
 import Me1 from "@/public/image/me1.jpg";
 import Me2 from "@/public/image/me2.jpg";
@@ -38,7 +37,6 @@ export default function About() {
 									alt="Lucas"
 									layout="fill"
 									objectFit="cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>
@@ -61,7 +59,6 @@ export default function About() {
 									alt="Lucas"
 									layout="fill"
 									objectFit="cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>
@@ -86,7 +83,6 @@ export default function About() {
 									alt="Lucas"
 									layout="fill"
 									objectFit="cover"
-									placeholder="blur"
 								/>
 							</motion.div>
 						</div>
@@ -138,7 +134,6 @@ export default function About() {
 						essential. Let&rsquo;s connect and explore the evolving intersection
 						of Software and AI together!
 					</p>
-					<Card />
 				</motion.div>
 			</div>
 		</>

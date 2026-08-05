@@ -35,22 +35,34 @@ const Sidebar = () => {
           </button>
         </li>
         <li data-menuanchor="about">
-          <button onClick={() => handleMoveToSection(2)} class="cursor-pointer">
+          <button
+            onClick={() => handleMoveToSection(2)}
+            className="cursor-pointer"
+          >
             <FontAwesomeIcon icon={faUser} className="text-xl" />
           </button>
         </li>
         <li data-menuanchor="projects">
-          <button onClick={() => handleMoveToSection(3)} class="cursor-pointer">
+          <button
+            onClick={() => handleMoveToSection(3)}
+            className="cursor-pointer"
+          >
             <FontAwesomeIcon icon={faFolderOpen} className="text-xl" />
           </button>
         </li>
         <li data-menuanchor="posts">
-          <button onClick={() => handleMoveToSection(4)} class="cursor-pointer">
+          <button
+            onClick={() => handleMoveToSection(4)}
+            className="cursor-pointer"
+          >
             <FontAwesomeIcon icon={faFile} className="text-xl" />
           </button>
         </li>
         <li data-menuanchor="contact">
-          <button onClick={() => handleMoveToSection(5)} class="cursor-pointer">
+          <button
+            onClick={() => handleMoveToSection(5)}
+            className="cursor-pointer"
+          >
             <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
           </button>
         </li>

@@ -93,16 +93,17 @@ export default function Page () {
 										</td>
 										<td>
 											<div className="flex flex-row justify-center items-center">
-												{project.code && (
+												{project.code.map((repository) => (
 													<a
-														href={project.code}
-														title="Link to GitHub">
+														key={repository.url}
+														href={repository.url}
+														title={`GitHub: ${repository.label}`}>
 														<FontAwesomeIcon
 															icon={faGithub}
 															className="text-xl mr-2"
 														/>
 													</a>
-												)}
+												))}
 												{project.preview && (
 													<a
 														href={project.preview}

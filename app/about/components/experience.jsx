@@ -64,7 +64,7 @@ const experiences = [
 		company: "Freelancer.com & Upwork.com",
 		position: "Software Developer",
 		type: "Freelance",
-		location: "Singapore & Alaska",
+		location: "Singapore",
 		description:
 			"Gave up to work on Australian Company because My communication skill was assessed as low. I tried to restart freelancing and now am building many social impacted projects like SafeSchoolz.",
 		skills: ["Mobile Application Development", "AI"],

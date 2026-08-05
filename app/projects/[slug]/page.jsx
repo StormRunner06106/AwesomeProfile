@@ -154,23 +154,26 @@ function Page(props) {
 								</p>
 							</div>
 						)}
-						{data.code && (
+						{data.code.length > 0 && (
 							<div>
 								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
 									Source Code
 								</h2>
-								<p className="text-2xl font-normal text-neutral-900">
-									<a
-										href={data.code}
+								<div className="flex flex-col gap-2 text-2xl font-normal text-neutral-900">
+									{data.code.map((repository) => (
+										<a
+											key={repository.url}
+											href={repository.url}
 										target="_blank"
 										rel="noopener noreferrer">
-										Github{" "}
-										<FontAwesomeIcon
-											icon={faGithub}
-											className="ml-3"
-										/>
-									</a>
-								</p>
+											{repository.label}{" "}
+											<FontAwesomeIcon
+												icon={faGithub}
+												className="ml-3"
+											/>
+										</a>
+									))}
+								</div>
 							</div>
 						)}
 					</div>
