@@ -96,7 +96,7 @@ const MyPage = () => {
                       type: "spring",
                     }}
                   >
-                    Hi! I&rsquo;am Lucas, A junior fullstack developer
+                    Hi! I&rsquo;am Lucas, A senior software developer
                     specializing in modern Software Development with a growing
                     focus on Artificial Intelligence. Passionate about building
                     scalable, user-friendly applications and exploring AI
