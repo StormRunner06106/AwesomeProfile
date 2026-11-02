@@ -60,7 +60,7 @@ export default function Page() {
     <>
       <main className="overflow-hidden">
         <FixedButton href="/#posts">
-          <FontAwesomeIcon icon={faChevronLeft} className="text-black pr-10" />
+          <FontAwesomeIcon icon={faChevronLeft} className="text-ink pr-10" />
         </FixedButton>
         <div className="w-full flex flex-col items-center mt-10">
           <div className="w-full px-16 flex justify-between">

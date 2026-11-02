@@ -165,10 +165,10 @@ export default function Education() {
 						initial={{ opacity: 0, x: -50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}>
-						<div className="font-medium text-lg mb-4">2022 - Present</div>
+						<div className="font-medium text-lg mb-4">2009–2013</div>
 						<div>
 							<h2 className="font-semibold text-xl">
-								Trent Universitys
+								Trent University
 							</h2>
 							<h3 className="text-md font-normal mb-3">
 								Computer Science
@@ -203,17 +203,17 @@ export default function Education() {
 								</div>
 							</div>
 							<div className="flex items-center gap-2">
-								<p className="text-gray-600 text-justify title text-lg">
-									As an international student from Singapore, 
-									I pursued my higher education at <span className="text-black font-medium">Trent University</span> in Canada, one of the country’s top institutions. 
-									During my time there (starting in <span className="text-black font-medium">2013</span>), I joined the <span className="text-black font-medium">Computer Science Club</span> and 
-									immersed myself in both <span className="text-black font-medium">web development</span> and core programming languages like <span className="text-black font-medium">C/C++</span>. Beyond academics, 
-									I thrived in collaborative environments, building strong connections with peers as we worked together on shared projects. 
+								<p className="text-copy text-justify title text-lg">
+									As an international student from Singapore,
+									I pursued my higher education at <span className="text-ink font-medium">Trent University</span> in Canada, one of the country’s top institutions.
+									During my time there (from <span className="text-ink font-medium">2009 to 2013</span>), I joined the <span className="text-ink font-medium">Computer Science Club</span> and
+									immersed myself in both <span className="text-ink font-medium">web development</span> and core programming languages like <span className="text-ink font-medium">C/C++</span>. Beyond academics,
+									I thrived in collaborative environments, building strong connections with peers as we worked together on shared projects.
 									Our team’s passion for technology and problem-solving made those years incredibly rewarding!
 								</p>
 							</div>
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">
-								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								<div className="bg-soft-strong text-ink px-2 py-1 rounded-2xl">
 									GPA: 3.9 out of 4
 								</div>
 							</div>

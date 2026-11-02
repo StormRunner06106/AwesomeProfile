@@ -10,7 +10,7 @@ export default function ProjectCard({ project, index, activeCategory }) {
 				project.category.includes(Number(activeCategory))) && (
 				<Link href={"projects/" + project.slug} key={index}>
 					<motion.div
-						className="z-10 relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-auto bg-gray-400 group/tes py-20 px-5 md:py-2 aspect-video "
+						className="z-10 relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-auto bg-soft-strong group/tes py-20 px-5 md:py-2 aspect-video "
 						initial={{
 							opacity: 0,
 							x: -200,
@@ -30,7 +30,7 @@ export default function ProjectCard({ project, index, activeCategory }) {
 							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
 							blurDataURL={project.thumbnail}
 						/>
-						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
+						<div className="absolute top-0 left-0 bg-inverse-end px-4 py-2">
 							<h4 className="text-white">{project.year}</h4>
 						</div>
 						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
@@ -44,7 +44,7 @@ export default function ProjectCard({ project, index, activeCategory }) {
 								{project.tech.map((t, index) => (
 									<span
 										key={index}
-										className="m-1 px-4 py-2 bg-gray-600 text-white ">
+										className="m-1 px-4 py-2 bg-inverse-end text-white ">
 										{t}
 									</span>
 								))}

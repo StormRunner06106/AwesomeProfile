@@ -104,25 +104,25 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Lucas Taylor (Storm Runner)
+						Lucas Huang (Storm Runner)
 					</h2>
-					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Lucas Taylor, a
-						<span className="text-black font-medium">
+					<p className="text-copy text-justify title text-lg">
+						Hey there, I&rsquo;m Lucas Huang, a
+						<span className="text-ink font-medium">
 							{" "}
 							passionate Software Developer
 						</span>{" "}
 						with a growing expertise in
-						<span className="text-black font-medium">
+						<span className="text-ink font-medium">
 							{" "}
 							Artificial Intelligence.
 						</span>{" "}
 						Hailing from Singapore city, I&rsquo;was graduated with degree as{" "}
-						<span className="text-black font-medium">
+						<span className="text-ink font-medium">
 							Computer Science
 						</span>{" "}
 						at{" "}
-						<span className="text-black font-medium">
+						<span className="text-ink font-medium">
 							Trent University in Canada.
 						</span>{" "}
 						My work bridges modern web technologies and intelligent systems—from
@@ -130,7 +130,7 @@ export default function About() {
 						and AI-based solutions. Beyond development, I stay curious about
 						design and emerging technologies. In today&rsquo;s ever-changing
 						digital landscape, I believe being a
-						<span className="text-black font-medium"> lifelong learner</span> is
+						<span className="text-ink font-medium"> lifelong learner</span> is
 						essential. Let&rsquo;s connect and explore the evolving intersection
 						of Software and AI together!
 					</p>

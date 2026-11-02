@@ -38,7 +38,7 @@ function ScrollDownButton() {
   return (
     <div className="fixed bottom-5 left-0 right-0 flex justify-center items-center mb-10">
       <motion.div
-        className="h-10 w-10 bg-neutral-900 rounded-full flex justify-center items-center cursor-pointer"
+        className="h-10 w-10 bg-inverse rounded-full flex justify-center items-center cursor-pointer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={handleScroll}
@@ -79,21 +79,21 @@ function Page(props) {
 				<div className="min-h-screen flex justify-center items-center w-full">
 					<div className="mx-auto grid grid-cols-1 md:grid-cols-2  w-full">
 						<div className="flex justify-center items-start flex-col mb-5 space-y-10 w-ful p-4">
-							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-soft-strong h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-soft-strong h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-soft-strong h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-soft-strong h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-soft-strong h-20 w-full rounded shadow-lg"></div>
 						</div>
 						<div className="flex justify-start items-start flex-col mb-5 w-full p-4">
-							<div className="animate-pulse duration-500 shadow-lg bg-neutral-400 rounded  w-full h-full "></div>
+							<div className="animate-pulse duration-500 shadow-lg bg-soft-strong rounded  w-full h-full "></div>
 						</div>
 					</div>
 				</div>
 				{/* images */}
 				<div className="mx-auto grid grid-cols-1 p-5 md:p-20  w-full h-auto">
 					<div className="w-full h-auto aspect-video">
-						<div className="animate-pulse duration-500 shadow-lg bg-neutral-400 h-full w-full rounded"></div>
+						<div className="animate-pulse duration-500 shadow-lg bg-soft-strong h-full w-full rounded"></div>
 					</div>
 				</div>
 			</div>
@@ -104,7 +104,7 @@ function Page(props) {
 			<FixedButon href="/projects">
 				<FontAwesomeIcon
 					icon={faChevronLeft}
-					className="text-black pr-10"
+					className="text-ink pr-10"
 				/>
 			</FixedButon>
 			<ScrollDownButton />
@@ -112,35 +112,35 @@ function Page(props) {
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-2  mt-10 md:mt-0">
 					<div className="min-h-screen sm:min-h-0 flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">
 						<div>
-							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+							<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 								Project
 							</h2>
-							<h1 className="text-4xl font-medium text-neutral-900">
+							<h1 className="text-4xl font-medium text-ink">
 								{data.title}
 							</h1>
 						</div>
 						<div>
-							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+							<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 								Technology
 							</h2>
-							<p className="text-2xl font-normal text-neutral-900">
+							<p className="text-2xl font-normal text-ink">
 								{data.tech.join(", ")}
 							</p>
 						</div>
 						<div>
-							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+							<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 								Year
 							</h2>
-							<p className="text-2xl font-normal text-neutral-900">
+							<p className="text-2xl font-normal text-ink">
 								{data.year}
 							</p>
 						</div>
 						{data.preview && (
 							<div>
-								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+								<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 									Preview
 								</h2>
-								<p className="text-2xl font-normal text-neutral-900">
+								<p className="text-2xl font-normal text-ink">
 									<a
 										href={data.preview}
 										target="_blank"
@@ -156,10 +156,10 @@ function Page(props) {
 						)}
 						{data.code.length > 0 && (
 							<div>
-								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+								<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 									Source Code
 								</h2>
-								<div className="flex flex-col gap-2 text-2xl font-normal text-neutral-900">
+								<div className="flex flex-col gap-2 text-2xl font-normal text-ink">
 									{data.code.map((repository) => (
 										<a
 											key={repository.url}
@@ -178,13 +178,13 @@ function Page(props) {
 						)}
 					</div>
 					<div className="flex justify-start items-start flex-col mb-5 ">
-						<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
+						<h2 className="uppercase font-normal text-lg tracking-[8px] text-muted">
 							Description
 						</h2>
 						{data.desc.map((desc, index) => (
 							<p
 								key={index}
-								className="text-xl text-justify tracking-wide font-normal text-gray-500 mb-5">
+								className="text-xl text-justify tracking-wide font-normal text-muted mb-5">
 								{desc}
 							</p>
 						))}

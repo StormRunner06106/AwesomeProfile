@@ -11,7 +11,7 @@ export default function Footer() {
 			<div className="flex justify-center items-center flex-col mt-5 self-center min-h-[50vh] border-b-2 min-w-[80vw] ">
 				<Link href="/#contact">
 					<motion.h2
-						className="text-xl font-medium mt-3 text-center text-gray-400  hover:underline whitespace-nowrap leading-none md:tracking-[0.5rem]"
+						className="text-xl font-medium mt-3 text-center text-muted  hover:underline whitespace-nowrap leading-none md:tracking-[0.5rem]"
 						initial={{
 							opacity: 0,
 							x: -100,
@@ -47,9 +47,9 @@ export default function Footer() {
 				</Link>
 			</div>
 			<footer className="flex justify-center items-center flex-col my-5 self-start]">
-				<p className="text-gray-800 text-sm">
+				<p className="text-ink text-sm">
 					&copy;{new Date().getFullYear()} -{" "}
-					<span className="text-gray-700 text-lg">Lucas</span>
+					<span className="text-copy text-lg">Lucas</span>
 				</p>
 			</footer>
 		</div>

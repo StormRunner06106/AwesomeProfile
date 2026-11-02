@@ -1,0 +1,218 @@
+{
+  "profile": {
+    "name": "Lucas Huang",
+    "title": "Senior Software Developer",
+    "location": "Singapore",
+    "email": "stormrunner06106@gmail.com",
+    "website": "https://lucas.my.id",
+    "github": "https://github.com/StormRunner06106",
+    "summary": "I'm a software developer focused on AI, web, and mobile applications. I enjoy understanding what people need and turning their ideas into software that is useful and easy to work with. I like to stay involved from early discussions through delivery, working closely with clients and teams as the product takes shape. I value clear communication, thoughtful design, and the willingness to keep learning and improving along the way."
+  },
+  "skills": {
+    "Frontend": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Preact",
+      "Next.js",
+      "Angular",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "Backend & CMS": [
+      "Node.js",
+      "Bun",
+      "Express",
+      "PHP",
+      "Laravel",
+      "Python",
+      "Django",
+      "FastAPI",
+      "Spring Boot",
+      "WordPress",
+      "WooCommerce"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Firebase",
+      "Cloudflare D1"
+    ],
+    "Mobile": [
+      "Android",
+      "Java",
+      "Kotlin",
+      "Flutter",
+      "Dart",
+      "React Native"
+    ],
+    "AI & machine learning": [
+      "TensorFlow",
+      "TensorFlow Lite",
+      "PyTorch",
+      "OpenAI API",
+      "LangChain",
+      "Object Detection"
+    ],
+    "Cloud & tools": [
+      "Cloudflare Workers",
+      "Durable Objects",
+      "R2",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "Postman"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "equity-funding-source",
+      "highlights": [
+        "Built borrower, lender, and administrator workflows for a Los Angeles mortgage-loan broker using Preact and Bun.",
+        "Deployed on Cloudflare with relational data, real-time messaging, and document storage using D1, Durable Objects, and R2."
+      ]
+    },
+    {
+      "slug": "iipm",
+      "highlights": [
+        "Expanded WordPress landing pages into a PHP and PostgreSQL membership platform for the Irish Institute of Pensions Management.",
+        "Automated onboarding, qualification reviews, course-progress tracking, annual membership payments, and PDF certificate generation."
+      ]
+    },
+    {
+      "slug": "safeschoolz",
+      "highlights": [
+        "Built the Media Pipe and Aegis Android applications and integrated detection alerts, evidence clips, and Twilio call workflows with the HeroEyez portal.",
+        "Adapted firearm detection for edge devices using TensorFlow Lite and trained and tested with more than 10,000 images; deployed the application in June 2025."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Trent University",
+      "fieldOfStudy": "Computer Science",
+      "dates": "2009–2013"
+    }
+  ],
+  "draftExperience": [],
+  "reviewNotes": [
+    "All six roles are in json/experience.json. The portfolio and resume share company, industry, dates, and highlights. Each portfolio card shows a short description; full career details appear in its modal.",
+    "RemotePeople / Frontend Developer / Jan 2019–Dec 2020 / China; HeyMax / Software Developer / Jan 2023–Dec 2023 / Singapore; Portcast / DevOps Developer / 2018–2021 / Singapore. All three roles are remote. Employer names were supplied by the user; duties remain proposed wording.",
+    "RemotePeople and HeyMax dates were selected during drafting at the user's request; employment history has not been independently verified. Company background sources: https://remotepeople.com/about/ and https://marketing.heymax.ai/about/.",
+    "Freelancer.com is recorded as 2021–Jun 2025, followed by independent development from Jun 2025 to Present, as requested.",
+    "Upwork appears immediately above Freelancer.com. Its Mar 2023 start comes from the original combined freelance entry; Mar 2026 is the end of the documented IIPM.ie engagement. SafeSchoolz and IIPM.ie are recorded under Upwork; Equity Funding Source remains under independent development.",
+    "The user confirmed education dates as 2009–2013. The About page and education context now use this range. Education remains omitted from the resume until the degree or qualification is supplied.",
+    "Project records stay in json/data.json. This file contains only selected resume summaries; no new project metrics have been invented."
+  ],
+  "resume": {
+    "summary": "I'm a software developer focused on AI, web, and mobile applications. I enjoy understanding what people need and turning their ideas into software that is useful and easy to work with. I like to stay involved from early discussions through delivery, working closely with clients and teams as the product takes shape. I value clear communication, thoughtful design, and the willingness to keep learning and improving along the way.",
+    "skills": {
+      "Frontend": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Preact",
+        "Next.js",
+        "Angular",
+        "Tailwind CSS",
+        "Bootstrap"
+      ],
+      "Backend & CMS": [
+        "Node.js",
+        "Bun",
+        "Express",
+        "PHP",
+        "Laravel",
+        "Python",
+        "Django",
+        "FastAPI",
+        "Spring Boot",
+        "WordPress",
+        "WooCommerce"
+      ],
+      "Databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Firebase",
+        "Cloudflare D1"
+      ],
+      "Mobile": [
+        "Android",
+        "Java",
+        "Kotlin",
+        "Flutter",
+        "Dart",
+        "React Native"
+      ],
+      "AI & machine learning": [
+        "TensorFlow",
+        "TensorFlow Lite",
+        "PyTorch",
+        "OpenAI API",
+        "LangChain",
+        "Object Detection"
+      ],
+      "Cloud & tools": [
+        "Cloudflare Workers",
+        "Durable Objects",
+        "R2",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "Postman"
+      ]
+    },
+    "experience": [
+      {
+        "id": "independent"
+      },
+      {
+        "id": "upwork"
+      },
+      {
+        "id": "freelancer"
+      },
+      {
+        "id": "heymax"
+      },
+      {
+        "id": "portcast"
+      },
+      {
+        "id": "remotepeople"
+      }
+    ],
+    "projects": [
+      {
+        "slug": "equity-funding-source",
+        "summary": "Lending workflows, real-time messaging, and document storage with Preact, Bun, and Cloudflare."
+      },
+      {
+        "slug": "iipm",
+        "summary": "Membership onboarding, course tracking, payments, and PDF certificates with PHP and PostgreSQL."
+      },
+      {
+        "slug": "safeschoolz",
+        "summary": "Android firearm detection and incident alerts using TensorFlow Lite, Java, and Kotlin."
+      },
+      {
+        "slug": "drivemond",
+        "summary": "Passenger and driver apps with live tracking, payments, and administration using Flutter and Laravel."
+      },
+      {
+        "slug": "bestinform",
+        "summary": "Hotel and restaurant booking platform using Angular and Spring Boot."
+      },
+      {
+        "slug": "galler-ai",
+        "summary": "Prompt-based image generation with React, Node.js, and OpenAI."
+      },
+      {
+        "slug": "james",
+        "summary": "WordPress and WooCommerce storefront with product catalogs, payments, and shipping integrations."
+      }
+    ]
+  }
+}

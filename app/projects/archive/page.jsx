@@ -16,13 +16,13 @@ export default function Page () {
 				<FixedButon href="/projects">
 					<FontAwesomeIcon
 						icon={faChevronLeft}
-						className="text-black pr-10"
+						className="text-ink pr-10"
 					/>
 				</FixedButon>
 				<div className="min-h-screen w-screen mt-10 md:mt-0  p-10 flex justify-center items-center flex-col mb-10">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<motion.div
-							className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
+							className="bg-accent w-28 h-1 rounded-full mb-3 self-start"
 							initial={{
 								opacity: 0,
 								x: -250,
@@ -37,7 +37,7 @@ export default function Page () {
 								type: "spring",
 							}}></motion.div>
 						<motion.div
-							className="bg-gray-700 w-28 h-1 rounded-full"
+							className="bg-accent w-28 h-1 rounded-full"
 							initial={{
 								opacity: 0,
 								x: 200,

@@ -53,7 +53,7 @@ const MyPage = () => {
                   }}
                 >
                   <div className="block md:hidden mx-auto my-8">
-                    <div className="bg-slate-500 rounded-full h-64 w-64 grayscale hover:grayscale-0 transition-all ease duration-300">
+                    <div className="bg-soft-strong rounded-full h-64 w-64 grayscale hover:grayscale-0 transition-all ease duration-300">
                       <img
                         src={Me.src}
                         width={500}
@@ -66,7 +66,7 @@ const MyPage = () => {
                     </div>
                   </div>
                   <motion.h3
-                    className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500"
+                    className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-muted"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -74,10 +74,10 @@ const MyPage = () => {
                       type: "spring",
                     }}
                   >
-                    Lucas Taylor
+                    Lucas Huang
                   </motion.h3>
                   <motion.h1
-                    className="text-black text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold my-2 md:my-5"
+                    className="text-ink text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold my-2 md:my-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -88,7 +88,7 @@ const MyPage = () => {
                     Full Stack & AI Developer
                   </motion.h1>
                   <motion.p
-                    className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+                    className="title text-md  2xl:text-xl mt-4 tracking-wider text-muted leading-[1.7rem]"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -112,14 +112,12 @@ const MyPage = () => {
                     }}
                   >
                     <Button variation="primary">
-                      <Link
-                        href={"/docs/cv.pdf"}
-                        target="_blank"
-                        rel="resume"
-                        download
+                      <a
+                        href="/docs/cv.pdf"
+                        download="Lucas-Huang-Resume.pdf"
                       >
                         Download CV
-                      </Link>
+                      </a>
                     </Button>
                     <Button variation="secondary">
                       <a href="#contact">Contact Me</a>
@@ -153,7 +151,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+                    className="relative bg-soft rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -182,7 +180,7 @@ const MyPage = () => {
                 </div>
                 <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
-                    className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+                    className="bg-surface lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-ink text-5xl md:text-8xl font-bold"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -194,7 +192,7 @@ const MyPage = () => {
                   </motion.h1>
                   <Hr />
                   <motion.p
-                    className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+                    className="title  text-xl mt-4 tracking-wider text-muted leading-[1.7rem] mb-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -223,7 +221,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+                    className="relative bg-soft rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -252,7 +250,7 @@ const MyPage = () => {
                 </div>
                 <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
-                    className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+                    className="bg-surface lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-ink text-5xl md:text-8xl font-bold"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -264,7 +262,7 @@ const MyPage = () => {
                   </motion.h1>
                   <Hr />
                   <motion.p
-                    className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+                    className="title  text-xl mt-4 tracking-wider text-muted leading-[1.7rem] mb-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -273,7 +271,7 @@ const MyPage = () => {
                     }}
                   >
                     This is some of my projects that I have done{" "}
-                    <span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+                    <span className="bg-transparent md:bg-soft bg-opacity-50 xl:bg-transparent">
                       {" "}
                       and currently working on.
                     </span>
@@ -297,7 +295,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+                    className="relative bg-soft rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -326,7 +324,7 @@ const MyPage = () => {
                 </div>
                 <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
                   <motion.h1
-                    className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
+                    className="bg-surface lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-ink text-5xl md:text-8xl font-bold"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -338,7 +336,7 @@ const MyPage = () => {
                   </motion.h1>
                   <Hr />
                   <motion.p
-                    className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+                    className="title  text-xl mt-4 tracking-wider text-muted leading-[1.7rem] mb-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -347,7 +345,7 @@ const MyPage = () => {
                     }}
                   >
                     These are my favourite articles and posts{" "}
-                    <span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+                    <span className="bg-transparent md:bg-soft bg-opacity-50 xl:bg-transparent">
                       {" "}
                       and enjoy to write all the time.
                     </span>
@@ -371,7 +369,7 @@ const MyPage = () => {
               <div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
                 <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
                   <motion.div
-                    className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+                    className="relative bg-soft rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
                     initial={{
                       x: 300,
                       opacity: 0,
@@ -400,7 +398,7 @@ const MyPage = () => {
                 </div>
                 <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
                   <motion.h1
-                    className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold mb-3"
+                    className="bg-surface lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-ink text-5xl md:text-8xl font-bold mb-3"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -412,7 +410,7 @@ const MyPage = () => {
                   </motion.h1>
                   <Hr />
                   <motion.p
-                    className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
+                    className="title text-xl mt-4 tracking-wider text-muted leading-[1.7rem] md:mb-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -421,12 +419,12 @@ const MyPage = () => {
                     }}
                   >
                     Feel free to contact me if you have any{" "}
-                    <span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+                    <span className="bg-transparent md:bg-soft bg-opacity-50 xl:bg-transparent">
                       questions or just want to say hi.
                     </span>
                   </motion.p>
                   <motion.p
-                    className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+                    className="title text-xl mt-4 tracking-wider text-muted leading-[1.7rem] mb-5"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
@@ -442,7 +440,7 @@ const MyPage = () => {
                   <div className="flex justify-center items-center space-x-4">
                     <motion.a
                       href="mailto:stormrunner06106@gmail.com?subject=Hello&body=Hello Lucas,"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+                      className="flex justify-center items-center bg-accent w-14 h-14 rounded-full text-on-accent hover:bg-accent/80 transition-all ease-in-out duration-300"
                       initial={{ y: 40, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{
@@ -456,7 +454,7 @@ const MyPage = () => {
                       href="https://github.com/StormRunner06106"
                       target="_blank"
                       rel="stormdev"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+                      className="flex justify-center items-center bg-accent w-14 h-14 rounded-full text-on-accent hover:bg-accent/80 transition-all ease-in-out duration-300"
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -470,7 +468,7 @@ const MyPage = () => {
                       href="https://bsky.app/profile/stormrunner06106.bsky.social"
                       target="_blank"
                       rel="storm runner"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+                      className="flex justify-center items-center bg-accent w-14 h-14 rounded-full text-on-accent hover:bg-accent/80 transition-all ease-in-out duration-300"
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -484,7 +482,7 @@ const MyPage = () => {
                       href="https://discord.com/users/lucast06106"
                       target="_blank"
                       rel="storm runner"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+                      className="flex justify-center items-center bg-accent w-14 h-14 rounded-full text-on-accent hover:bg-accent/80 transition-all ease-in-out duration-300"
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -495,11 +493,11 @@ const MyPage = () => {
                       <FontAwesomeIcon icon={faDiscord} className="text-3xl" />
                     </motion.a>
                     <motion.a
-                      href="https://t.me/lhuang0106"
+                      href="https://t.me/lucasstorm16"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Contact me on Telegram at @lhuang0106"
-                      className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+                      aria-label="Contact me on Telegram at @lucasstorm16"
+                      className="flex justify-center items-center bg-accent w-14 h-14 rounded-full text-on-accent hover:bg-accent/80 transition-all ease-in-out duration-300"
                       initial={{ opacity: 0, y: 40 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{

@@ -5,53 +5,30 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
-import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
+import { createPageMetadata, siteUrl } from "@/lib/site";
+import { themeInitializationScript } from "@/lib/themes";
 
 export const metadata = {
-    title: "Lucas/Storm | Portofolio",
-
-    description:
-		"My name is Lucas Taylor, I'm a fullstack software developer and passionate about it. I'm currently managing innovative ideas to come true.",
-
-    author: "Lucas Taylor",
-    siteUrl: "https://www.lucas.my.id",
-    applicationName: "Lucas",
-
-    keywords: [
-		"lucas",
-		"lucas taylor",
-		"storm",
-		"storm runner",
-		"singapore",
-	],
-
-    openGraph: {
-		type: "website",
-		url: "https://www.lucas.my.id",
-		title: "Lucas | Portofolio",
-		site_name: "Luacs | Portofolio",
-		description: "My name is Lucas, This is my portofolio website.",
-		width: 1200,
-		height: 630,
-		images: [
-			{
-				url: "/og-image-rev.png",
-				alt: "Lucas Portofolio",
-			},
-		],
-		site_name: "Lucas | Portofolio",
-	}
+	...createPageMetadata(),
+	metadataBase: siteUrl,
+	authors: [{ name: "Lucas Huang" }],
+	applicationName: "Lucas Huang Portfolio",
+	keywords: ["Lucas Huang", "software developer", "AI", "web applications", "mobile applications", "Singapore"],
 };
+
+export const viewport = { themeColor: "#e6e6e6" };
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="en" data-theme="classic" suppressHydrationWarning>
+			<head>
+				<script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
+			</head>
 			<body>
 				<ClientTopProgressBar />
 				<Navbar />
 				{children}
-				{/* <Chat /> */}
 				<Analytics />
 			</body>
 		</html>

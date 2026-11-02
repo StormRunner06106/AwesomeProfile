@@ -1,12 +1,12 @@
 {
   "name": "stormrunner-portfolio-website",
   "author": {
-    "name": "Lucas Taylor",
+    "name": "Lucas Huang",
     "email": "stormrunner06106@gmail.com",
     "url": "https://lucas.my.id"
   },
   "license": "GPL-3.0",
-  "copyright": "Copyright (C) 2025 Lucas Taylor",
+  "copyright": "Copyright (C) 2025 Lucas Huang",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-sitemap": "node generate-sitemap.js"
+    "generate-sitemap": "node generate-sitemap.js",
+    "resume": "node resume-builder/generate.mjs",
+    "resume:sync": "node resume-builder/generate.mjs --output resume-builder/output/latest --publish",
+    "test:resume": "node --test resume-builder/generate.test.mjs",
+    "social:banner": "node scripts/generate-social-banner.mjs"
   },
   "dependencies": {
     "@atproto/api": "^0.15.27",

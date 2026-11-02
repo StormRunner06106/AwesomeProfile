@@ -1,0 +1,138 @@
+[
+  {
+    "id": "independent",
+    "startDate": "Jun 2025",
+    "endDate": "Present",
+    "company": "Self-employed",
+    "industry": "Financial Services",
+    "position": "Independent Software Developer",
+    "type": "Self-employed",
+    "location": "Singapore",
+    "description": "Built web applications for independent clients, including Equity Funding Source, from early workflow discussions through deployment.",
+    "highlights": [
+      "Built Equity Funding Source for a Los Angeles mortgage broker. Used Preact and Bun for the borrower, lender, and administrator workflows, including loan applications and document handling.",
+      "Deployed the platform on Cloudflare Workers, with D1 for relational data, Durable Objects for real-time messaging, and R2 for uploaded documents."
+    ],
+    "skills": [
+      "Preact",
+      "Bun",
+      "Cloudflare Workers",
+      "Cloudflare D1",
+      "Durable Objects",
+      "Cloudflare R2",
+      "PHP",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "id": "upwork",
+    "startDate": "Mar 2023",
+    "endDate": "Mar 2026",
+    "company": "Upwork",
+    "industry": "Education Technology & Professional Associations",
+    "companyWebsite": "https://www.upwork.com/",
+    "position": "Software Developer",
+    "type": "Freelance (Remote)",
+    "location": "Singapore",
+    "description": "Developed web and mobile applications for Upwork clients, including SafeSchoolz and the IIPM.ie membership portal.",
+    "highlights": [
+      "Built the Media Pipe and Aegis Android applications for SafeSchoolz, connecting detection alerts, evidence clips, and Twilio call workflows to the HeroEyez portal. Adapted firearm detection for edge devices using TensorFlow Lite and deployed the application in June 2025.",
+      "Developed IIPM.ie from April 2025 to March 2026, expanding WordPress landing pages into a PHP and PostgreSQL membership platform for the Irish Institute of Pensions Management.",
+      "Implemented membership onboarding, qualification reviews, course-progress tracking, annual payments, and PDF certificates, alongside administrative dashboards and reviews.",
+      "Worked through feedback first with the agency, then with the end client. Much of the IIPM.ie work involved turning manual membership paperwork into review screens and automated certificate workflows."
+    ],
+    "skills": [
+      "PHP",
+      "PostgreSQL",
+      "WordPress",
+      "Android",
+      "Java",
+      "Kotlin",
+      "TensorFlow Lite",
+      "Twilio"
+    ]
+  },
+  {
+    "id": "freelancer",
+    "startDate": "2021",
+    "endDate": "Jun 2025",
+    "company": "Freelancer.com",
+    "industry": "Software Services (Multiple Industries)",
+    "position": "Freelancer",
+    "type": "Freelance (Remote)",
+    "location": "Singapore",
+    "description": "A mix of client websites, web applications, and mobile work, with the scope and tools changing from one assignment to the next.",
+    "highlights": [
+      "Client work ranged from WordPress sites to React applications and Android features. Used PHP and supporting backend services where the project needed more than a frontend.",
+      "Turned client requests into working screens and application flows, connecting the interface to the backend and testing the complete flow before delivery.",
+      "Returned to implementations after client review to fix bugs and adjust behavior. Followed problems through frontend, backend, and mobile code, depending on where the issue originated."
+    ],
+    "skills": [
+      "React",
+      "PHP",
+      "WordPress",
+      "Android",
+      "Java",
+      "AI"
+    ]
+  },
+  {
+    "id": "heymax",
+    "startDate": "Jan 2023",
+    "endDate": "Dec 2023",
+    "company": "HeyMax",
+    "industry": "Travel & Loyalty Technology",
+    "companyWebsite": "https://marketing.heymax.ai/",
+    "position": "Software Developer",
+    "type": "Remote",
+    "location": "Singapore",
+    "description": "Application development with an emphasis on the connections between user-facing features and backend services.",
+    "highlights": [
+      "Worked on application features that relied on backend integrations. Followed requests from the interface through the service layer to investigate inconsistent behavior, then made changes on the side responsible for the problem.",
+      "Stayed involved through testing and release preparation: checked the affected user flows, resolved issues found during review, and passed on the context needed for teammates to maintain the changes."
+    ],
+    "skills": [],
+    "reviewNeeded": "Dates and duties were drafted at the user's request and have not been independently verified.",
+    "contentStatus": "draft"
+  },
+  {
+    "id": "portcast",
+    "startDate": "2018",
+    "endDate": "2021",
+    "company": "Portcast",
+    "industry": "Logistics & Supply Chain Technology",
+    "companyWebsite": "https://www.portcast.io/",
+    "position": "DevOps Developer",
+    "type": "Remote",
+    "location": "Singapore",
+    "description": "Day-to-day deployment and service operations, with particular attention to repeatable setup and diagnosing failed releases.",
+    "highlights": [
+      "Looked after the build-to-deploy path for web services, including environment settings and checks before a release.",
+      "Scripted environment setup and routine operational tasks so the same process could be repeated across deployments.",
+      "When a deployment failed, worked back through logs, configuration, and application behavior to locate the problem and get the service running again.",
+      "Kept deployment and recovery notes alongside the fixes, making the next release easier for whoever was handling it."
+    ],
+    "skills": [],
+    "reviewNeeded": "Employer supplied by the user. Review the proposed duties and provide the technologies actually used before moving this entry into the published career data.",
+    "contentStatus": "draft"
+  },
+  {
+    "id": "remotepeople",
+    "startDate": "Jan 2019",
+    "endDate": "Dec 2020",
+    "company": "RemotePeople",
+    "industry": "Human Resources & Global Employment",
+    "companyWebsite": "https://remotepeople.com/",
+    "position": "Frontend Developer",
+    "type": "Remote",
+    "location": "China",
+    "description": "Frontend work centered on turning designs into usable pages and getting the details right across screens and browsers.",
+    "highlights": [
+      "Turned design specifications into responsive pages and interactive components. Adjusted layouts for desktop and mobile, then worked through browser differences with the designers.",
+      "Connected forms and page content to backend APIs, including loading, empty, and error states. Refined the interactions with backend developers and incorporated design feedback as the pages took shape."
+    ],
+    "skills": [],
+    "reviewNeeded": "Dates and duties were drafted at the user's request and have not been independently verified.",
+    "contentStatus": "draft"
+  }
+]

@@ -35,7 +35,7 @@ export default function Page() {
 		<>
 			<main className="overflow-hidden">
 				<FixedButon href="/#projects">
-					<FontAwesomeIcon icon={faChevronLeft} className="text-black pr-10" />
+					<FontAwesomeIcon icon={faChevronLeft} className="text-ink pr-10" />
 				</FixedButon>
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
@@ -43,7 +43,7 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ duration: 1, ease: "circOut" }}
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
+							className="bg-soft rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={ProjectAll}
 								alt="Lucas"
@@ -52,14 +52,14 @@ export default function Page() {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
-						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-soft bg-opacity-50 md:bg-transparent md:pt-0">
+						<h1 className="md:bg-surface bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-ink text-5xl md:text-8xl font-bold">
 							My Projects
 						</h1>
 						<Hr />
-						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
+						<p className="title  text-xl mt-4 tracking-wider text-ink leading-[1.7rem] mb-5">
 							List of my projects that I have done and{" "}<br />
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+							<span className="bg-transparent md:bg-soft bg-opacity-50 xl:bg-transparent">
 								{" "}
 								currently working on.
 							</span>
@@ -149,7 +149,7 @@ export default function Page() {
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
 							Drivemond RideSharing
 						</h2>
-						<p className="text-gray-600 text-justify title text-lg">
+						<p className="text-copy text-justify title text-lg">
 						Created an all-in-one solution for taxi service management, including passenger and driver apps.
 						Integrated real-time tracking, payment, and admin dashboard features.
 						</p>{" "}
@@ -185,7 +185,7 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							Other Note Worthy Projects
+							Projects ({projects.length})
 						</motion.h1>
 					</div>
 				</div>
@@ -207,10 +207,10 @@ export default function Page() {
 					{categories.map((category) => (
 						<button
 							key={category.key}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
+							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-soft-strong focus:text-ink focus:ring focus:ring-slate-500 ${
 								activeCategory === category.key
-									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
-									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
+									? "bg-soft-strong text-ink hover:bg-accent hover:text-on-accent"
+									: "bg-accent text-on-accent hover:bg-soft-strong hover:text-ink"
 							}`}
 							onClick={() => setActiveCategory(category.key)}>
 							{category.label}
@@ -223,7 +223,8 @@ export default function Page() {
 					{projects.map((project, index) => (
 						<ProjectCard
 							project={project}
-							key={index}
+								key={project.slug}
+								index={index}
 							activeCategory={activeCategory}
 						/>
 					))}
